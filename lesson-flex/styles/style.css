@@ -1,0 +1,46 @@
+body {
+    font-family: first111;
+}
+.flex {
+    margin: auto;
+    display: flex;
+    width: 500px;
+    font-size: 20px;
+    text-align: center;
+    background-color: bisque;
+    height: 2000px;
+    position: relative;
+    /* z-index: -10; */
+    
+}
+
+.item {
+    border: 5px #ed7635 solid;
+    background-color: #ed9d4f;
+    padding: 20px;
+    margin: 5px;
+    color: #fff9c4;
+    flex-grow: 1;
+    position: fixed;
+    z-index: 100;    
+}
+
+@font-face {
+    font-family: "first111";
+    scr: url('./fonts/alex-brush/AlexBrush-Regular.ttf') format ('ttf')
+}
+/* .flex div:first-child{ 
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    background-color: red;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+}*/
+
+
+
+/*.flex div:first-child{
+    overflow: hidden;
+} фиксирует граници елемента*/
+
