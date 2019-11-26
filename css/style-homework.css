@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0; 
+}
+body {
+    background-color: #f0f0f0;
+    padding: 100px;
+    font-family: Arial, sans-serif;
+    color: #c2c2c2;
+}
+.container {
+    display: flex;
+    width: 900px;
+    height: 150px;
+    margin: 0px auto;
+}  
+div h1 {
+    font-size: 80px;
+    font-weight: bold;
+    position: relative;
+    top: 0px;
+    left: 0px;   
+}
+.container div:last-child {
+    widows: 80px;
+    height: 80px;
+    position: relative;
+    right: -480px;
+    top: 5px;
+}
+.container div img {
+    width:70px;
+    height: 70px;
+    opacity:0.5;
+}
+
+.flex {
+    display: flex;
+    width: 900px;
+    height: 430px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0px auto;
+}
+.flex div:nth-child(4) {
+    color: #ec5a62;
+   background-color: rgba(118,117,128,0.1);
+}
+.flex div:hover {
+    background-color: rgba(118,117,128,0.1);
+    font-size: 14px;
+    color: #ec5a62;
+}
+.flex div:nth-child(-n+3) {
+    font-weight: 900;
+    font-size: 16px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    background-color: #f0f0f0;
+    width: 264px;
+    height: 58px;
+}
+.flex div:nth-child(-n+3):hover {
+    color: #c2c2c2;
+}
+.item {
+    padding: 0 0 0 5px;
+    display: flex;
+    background-color: rgba(118,117,128,0.05);
+    font-weight: bold;
+    font-size: 11px;
+    border-radius: 4px;
+    width: 260px;
+    height: 58px;
+    align-items:center; 
+}
+.flex div:nth-child(-n+3){
+    padding: 0 0 0 0;
+    letter-spacing: 1px;
+}
+.flex div img {
+    width: 40px;
+    height: 40px;
+}
+.item img {
+    margin: 0 10px 0 0;
+}
+
+/* незнайшов як додати border-radius:50% до конкретних картинок 
+             через nth-child, тому запис через класи */
+.image-1,.image-2,.image-3,.image-4,.image-5,.image-6 {
+   border-radius: 50%;
+}
+
+/*Description: kолір тексту в пошуку і посилання (link)  RED; 
+
+колір тексту і placeholder’a #c2c2c2 +++
+
+Фон елементів flex dпри наведенні rgba(118,117,128,0.1)
+
+для елементів flex (так де фоточки та картинки) - rgba(118,117,128,0.05) +++
+*/
